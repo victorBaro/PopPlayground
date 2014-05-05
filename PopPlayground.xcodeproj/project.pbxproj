@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D8DA629F083476384DA46C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE11025EA72460699A8B0ED /* libPods.a */; };
+		C77A8357191193DA007F1D85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77A8356191193DA007F1D85 /* Foundation.framework */; };
+		C77A8359191193DA007F1D85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77A8358191193DA007F1D85 /* CoreGraphics.framework */; };
+		C77A835B191193DA007F1D85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77A835A191193DA007F1D85 /* UIKit.framework */; };
+		C77A8361191193DA007F1D85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C77A835F191193DA007F1D85 /* InfoPlist.strings */; };
+		C77A8363191193DA007F1D85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A8362191193DA007F1D85 /* main.m */; };
+		C77A8367191193DA007F1D85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A8366191193DA007F1D85 /* AppDelegate.m */; };
+		C77A836A191193DA007F1D85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77A8368191193DA007F1D85 /* Main.storyboard */; };
+		C77A836D191193DA007F1D85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A836C191193DA007F1D85 /* ViewController.m */; };
+		C77A836F191193DA007F1D85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C77A836E191193DA007F1D85 /* Images.xcassets */; };
+		C77A8376191193DA007F1D85 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77A8375191193DA007F1D85 /* XCTest.framework */; };
+		C77A8377191193DA007F1D85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77A8356191193DA007F1D85 /* Foundation.framework */; };
+		C77A8378191193DA007F1D85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77A835A191193DA007F1D85 /* UIKit.framework */; };
+		C77A8380191193DA007F1D85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C77A837E191193DA007F1D85 /* InfoPlist.strings */; };
+		C77A8382191193DA007F1D85 /* PopPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C77A8381191193DA007F1D85 /* PopPlaygroundTests.m */; };
+		C7D3C1BF1913736C0067B448 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D3C1BE1913736C0067B448 /* SecondViewController.m */; };
+		C7EB925B1915218B0058FF03 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB925A1915218B0058FF03 /* ThirdViewController.m */; };
+		C7EB926119158E370058FF03 /* VBFDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB926019158E370058FF03 /* VBFDownloadButton.m */; };
+		C7EB9264191698C00058FF03 /* VBFPopUpMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9263191698C00058FF03 /* VBFPopUpMenu.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C77A8379191193DA007F1D85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C77A834B191193DA007F1D85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C77A8352191193DA007F1D85;
+			remoteInfo = PopPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E6C02B25E414E04A075761E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		AFE11025EA72460699A8B0ED /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77A8353191193DA007F1D85 /* PopPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77A8356191193DA007F1D85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C77A8358191193DA007F1D85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C77A835A191193DA007F1D85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C77A835E191193DA007F1D85 /* PopPlayground-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PopPlayground-Info.plist"; sourceTree = "<group>"; };
+		C77A8360191193DA007F1D85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C77A8362191193DA007F1D85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C77A8364191193DA007F1D85 /* PopPlayground-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PopPlayground-Prefix.pch"; sourceTree = "<group>"; };
+		C77A8365191193DA007F1D85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C77A8366191193DA007F1D85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C77A8369191193DA007F1D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C77A836B191193DA007F1D85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C77A836C191193DA007F1D85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C77A836E191193DA007F1D85 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C77A8374191193DA007F1D85 /* PopPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77A8375191193DA007F1D85 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C77A837D191193DA007F1D85 /* PopPlaygroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PopPlaygroundTests-Info.plist"; sourceTree = "<group>"; };
+		C77A837F191193DA007F1D85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C77A8381191193DA007F1D85 /* PopPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopPlaygroundTests.m; sourceTree = "<group>"; };
+		C7D3C1BD1913736C0067B448 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C7D3C1BE1913736C0067B448 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		C7EB92591915218B0058FF03 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		C7EB925A1915218B0058FF03 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		C7EB925F19158E370058FF03 /* VBFDownloadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFDownloadButton.h; sourceTree = "<group>"; };
+		C7EB926019158E370058FF03 /* VBFDownloadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFDownloadButton.m; sourceTree = "<group>"; };
+		C7EB9262191698C00058FF03 /* VBFPopUpMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFPopUpMenu.h; sourceTree = "<group>"; };
+		C7EB9263191698C00058FF03 /* VBFPopUpMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFPopUpMenu.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C77A8350191193DA007F1D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77A8359191193DA007F1D85 /* CoreGraphics.framework in Frameworks */,
+				C77A835B191193DA007F1D85 /* UIKit.framework in Frameworks */,
+				C77A8357191193DA007F1D85 /* Foundation.framework in Frameworks */,
+				1D8DA629F083476384DA46C6 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C77A8371191193DA007F1D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77A8376191193DA007F1D85 /* XCTest.framework in Frameworks */,
+				C77A8378191193DA007F1D85 /* UIKit.framework in Frameworks */,
+				C77A8377191193DA007F1D85 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C77A834A191193DA007F1D85 = {
+			isa = PBXGroup;
+			children = (
+				C77A835C191193DA007F1D85 /* PopPlayground */,
+				C77A837B191193DA007F1D85 /* PopPlaygroundTests */,
+				C77A8355191193DA007F1D85 /* Frameworks */,
+				C77A8354191193DA007F1D85 /* Products */,
+				1E6C02B25E414E04A075761E /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		C77A8354191193DA007F1D85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C77A8353191193DA007F1D85 /* PopPlayground.app */,
+				C77A8374191193DA007F1D85 /* PopPlaygroundTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C77A8355191193DA007F1D85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77A8356191193DA007F1D85 /* Foundation.framework */,
+				C77A8358191193DA007F1D85 /* CoreGraphics.framework */,
+				C77A835A191193DA007F1D85 /* UIKit.framework */,
+				C77A8375191193DA007F1D85 /* XCTest.framework */,
+				AFE11025EA72460699A8B0ED /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C77A835C191193DA007F1D85 /* PopPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				C77A8365191193DA007F1D85 /* AppDelegate.h */,
+				C77A8366191193DA007F1D85 /* AppDelegate.m */,
+				C77A8368191193DA007F1D85 /* Main.storyboard */,
+				C77A836B191193DA007F1D85 /* ViewController.h */,
+				C77A836C191193DA007F1D85 /* ViewController.m */,
+				C7D3C1BD1913736C0067B448 /* SecondViewController.h */,
+				C7D3C1BE1913736C0067B448 /* SecondViewController.m */,
+				C7EB92591915218B0058FF03 /* ThirdViewController.h */,
+				C7EB925A1915218B0058FF03 /* ThirdViewController.m */,
+				C7EB925F19158E370058FF03 /* VBFDownloadButton.h */,
+				C7EB926019158E370058FF03 /* VBFDownloadButton.m */,
+				C7EB9262191698C00058FF03 /* VBFPopUpMenu.h */,
+				C7EB9263191698C00058FF03 /* VBFPopUpMenu.m */,
+				C77A836E191193DA007F1D85 /* Images.xcassets */,
+				C77A835D191193DA007F1D85 /* Supporting Files */,
+			);
+			path = PopPlayground;
+			sourceTree = "<group>";
+		};
+		C77A835D191193DA007F1D85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C77A835E191193DA007F1D85 /* PopPlayground-Info.plist */,
+				C77A835F191193DA007F1D85 /* InfoPlist.strings */,
+				C77A8362191193DA007F1D85 /* main.m */,
+				C77A8364191193DA007F1D85 /* PopPlayground-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C77A837B191193DA007F1D85 /* PopPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				C77A8381191193DA007F1D85 /* PopPlaygroundTests.m */,
+				C77A837C191193DA007F1D85 /* Supporting Files */,
+			);
+			path = PopPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		C77A837C191193DA007F1D85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C77A837D191193DA007F1D85 /* PopPlaygroundTests-Info.plist */,
+				C77A837E191193DA007F1D85 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C77A8352191193DA007F1D85 /* PopPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C77A8385191193DA007F1D85 /* Build configuration list for PBXNativeTarget "PopPlayground" */;
+			buildPhases = (
+				8D9E12A47909437999F37419 /* Check Pods Manifest.lock */,
+				C77A834F191193DA007F1D85 /* Sources */,
+				C77A8350191193DA007F1D85 /* Frameworks */,
+				C77A8351191193DA007F1D85 /* Resources */,
+				F4EA63003CA745E489D1E8A3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopPlayground;
+			productName = PopPlayground;
+			productReference = C77A8353191193DA007F1D85 /* PopPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C77A8373191193DA007F1D85 /* PopPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C77A8388191193DA007F1D85 /* Build configuration list for PBXNativeTarget "PopPlaygroundTests" */;
+			buildPhases = (
+				C77A8370191193DA007F1D85 /* Sources */,
+				C77A8371191193DA007F1D85 /* Frameworks */,
+				C77A8372191193DA007F1D85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C77A837A191193DA007F1D85 /* PBXTargetDependency */,
+			);
+			name = PopPlaygroundTests;
+			productName = PopPlaygroundTests;
+			productReference = C77A8374191193DA007F1D85 /* PopPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C77A834B191193DA007F1D85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Victor Baro";
+				TargetAttributes = {
+					C77A8373191193DA007F1D85 = {
+						TestTargetID = C77A8352191193DA007F1D85;
+					};
+				};
+			};
+			buildConfigurationList = C77A834E191193DA007F1D85 /* Build configuration list for PBXProject "PopPlayground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C77A834A191193DA007F1D85;
+			productRefGroup = C77A8354191193DA007F1D85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C77A8352191193DA007F1D85 /* PopPlayground */,
+				C77A8373191193DA007F1D85 /* PopPlaygroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C77A8351191193DA007F1D85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77A836F191193DA007F1D85 /* Images.xcassets in Resources */,
+				C77A8361191193DA007F1D85 /* InfoPlist.strings in Resources */,
+				C77A836A191193DA007F1D85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C77A8372191193DA007F1D85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77A8380191193DA007F1D85 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D9E12A47909437999F37419 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4EA63003CA745E489D1E8A3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C77A834F191193DA007F1D85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D3C1BF1913736C0067B448 /* SecondViewController.m in Sources */,
+				C7EB925B1915218B0058FF03 /* ThirdViewController.m in Sources */,
+				C77A836D191193DA007F1D85 /* ViewController.m in Sources */,
+				C7EB9264191698C00058FF03 /* VBFPopUpMenu.m in Sources */,
+				C77A8367191193DA007F1D85 /* AppDelegate.m in Sources */,
+				C77A8363191193DA007F1D85 /* main.m in Sources */,
+				C7EB926119158E370058FF03 /* VBFDownloadButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C77A8370191193DA007F1D85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77A8382191193DA007F1D85 /* PopPlaygroundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C77A837A191193DA007F1D85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C77A8352191193DA007F1D85 /* PopPlayground */;
+			targetProxy = C77A8379191193DA007F1D85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C77A835F191193DA007F1D85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C77A8360191193DA007F1D85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C77A8368191193DA007F1D85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C77A8369191193DA007F1D85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C77A837E191193DA007F1D85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C77A837F191193DA007F1D85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C77A8383191193DA007F1D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C77A8384191193DA007F1D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C77A8386191193DA007F1D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6C02B25E414E04A075761E /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PopPlayground/PopPlayground-Prefix.pch";
+				INFOPLIST_FILE = "PopPlayground/PopPlayground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C77A8387191193DA007F1D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6C02B25E414E04A075761E /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PopPlayground/PopPlayground-Prefix.pch";
+				INFOPLIST_FILE = "PopPlayground/PopPlayground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C77A8389191193DA007F1D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PopPlayground.app/PopPlayground";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PopPlayground/PopPlayground-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PopPlaygroundTests/PopPlaygroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C77A838A191193DA007F1D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PopPlayground.app/PopPlayground";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PopPlayground/PopPlayground-Prefix.pch";
+				INFOPLIST_FILE = "PopPlaygroundTests/PopPlaygroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C77A834E191193DA007F1D85 /* Build configuration list for PBXProject "PopPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C77A8383191193DA007F1D85 /* Debug */,
+				C77A8384191193DA007F1D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C77A8385191193DA007F1D85 /* Build configuration list for PBXNativeTarget "PopPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C77A8386191193DA007F1D85 /* Debug */,
+				C77A8387191193DA007F1D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C77A8388191193DA007F1D85 /* Build configuration list for PBXNativeTarget "PopPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C77A8389191193DA007F1D85 /* Debug */,
+				C77A838A191193DA007F1D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C77A834B191193DA007F1D85 /* Project object */;
+}

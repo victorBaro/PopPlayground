@@ -1,0 +1,13 @@
+PODS:
+  - pop (1.0.4)
+  - UIColor+FlatColors (0.0.1)
+
+DEPENDENCIES:
+  - pop
+  - UIColor+FlatColors
+
+SPEC CHECKSUMS:
+  pop: 63a4f5e8942077fed2efe195036ecc572c71c48c
+  UIColor+FlatColors: 417fbe0894c1da0e7ab6505e1409a26052caa75f
+
+COCOAPODS: 0.32.1
