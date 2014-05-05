@@ -98,11 +98,11 @@
                                                                               radius*2)
                                                       cornerRadius:radius].CGPath;
         
-        
         // Configure the apperence of the circle
         self.circle.fillColor = [UIColor clearColor].CGColor;
         self.circle.strokeColor = [UIColor whiteColor].CGColor;
         self.circle.lineWidth = 2;
+        self.circle.strokeEnd = 0.0;
         
         // Add to parent layer
         [self.layer addSublayer:self.circle];
