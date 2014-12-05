@@ -5,11 +5,11 @@ UIColor+FlatColors
 
 That's it.
 
+<img src="https://raw.githubusercontent.com/mokagio/UIColor-FlatColors/master/screenshot.png" />
+
 I suggest you take a look at [FlatUIKit](https://github.com/Grouper/FlatUIKit) if you are looking for the full components of the Flat UI framework to use in your app.
 
-## Installation
-
-### CocoaPods
+## Installation with CocoaPods
 
 ```ruby
 platform :ios
@@ -17,9 +17,13 @@ platform :ios
 pod 'UIColor+FlatColors'
 ```
 
-### Paleolithic way
+## Usage
 
-Drag and drop the files in the **UIColor+FlatColors** folder into your project.
+Get the colors from a `UIColor` class method following this naming pattern: `flat<# color_name #>Color`. To see all the available colors check [flatuicolors.com](http://flatuicolors.com/).
+
+```objc
+someViewYouWantToColor.backgroundColor = [UIColor flatEmeraldColor];
+```
 
 ## License
 

@@ -43,7 +43,7 @@
         CGRect frame = CGRectMake(50, 120*i, diameter, diameter);
         UIView *view = [[UIView alloc]initWithFrame:frame];
         view.layer.cornerRadius = diameter/2;
-        view.backgroundColor = [UIColor flatRandomColor];
+        view.backgroundColor = [UIColor flatEmeraldColor];
         view.tag = i;
         if (i != 5) {
             UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(viewTapped:)];

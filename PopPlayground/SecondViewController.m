@@ -32,7 +32,7 @@
         for (int j=1; j<4; j++) {
             CGRect frame = CGRectMake(240*j, 180*i, diameter, diameter);
             UIView *view = [[UIView alloc]initWithFrame:frame];
-            view.backgroundColor = [UIColor flatRandomColor];
+            view.backgroundColor = [UIColor flatEmeraldColor];
             
             if (tag != 5) {
                 //View 5 will be square
@@ -149,14 +149,14 @@
     POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewBackgroundColor];
     anim.duration = 1.0;
     anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    anim.toValue = (__bridge id)([UIColor flatRandomColor].CGColor);
+    anim.toValue = (__bridge id)([UIColor flatEmeraldColor].CGColor);
     
     [view pop_addAnimation:anim forKey:@"popColorBasic"];
 }
 
 - (void) addBckgColorSpringChangeAnimationToView:(UIView *)view {
     POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPViewBackgroundColor];
-    anim.toValue =  (__bridge id)([UIColor flatRandomColor].CGColor);
+    anim.toValue =  (__bridge id)([UIColor flatEmeraldColor].CGColor);
     anim.springBounciness = 20;
     
     [view pop_addAnimation:anim forKey:@"popColorSpring"];
