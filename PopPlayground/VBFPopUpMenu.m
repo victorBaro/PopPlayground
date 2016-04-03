@@ -149,7 +149,7 @@
         [iconViews addObject:iconView];
     }
 
-    int nIcons = [self.icons count];
+    int nIcons = (int)[self.icons count];
     int iconNumber = 0;
     
     
