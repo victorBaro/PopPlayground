@@ -11,17 +11,18 @@
 
 @interface SecondViewController () <POPAnimationDelegate>
 
+@property (nonatomic, assign) BOOL view8IsSquare;
+
 @end
 
 @implementation SecondViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     UITapGestureRecognizer *mainViewTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(mainViewTap:)];
     [self.view addGestureRecognizer:mainViewTap];
-
+    self.view8IsSquare = YES;
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -34,8 +35,8 @@
             UIView *view = [[UIView alloc]initWithFrame:frame];
             view.backgroundColor = [UIColor flatEmeraldColor];
             
-            if (tag != 5) {
-                //View 5 will be square
+            if (tag != 5 && tag != 8) {
+                //Views 5 and 8 will be square
                 view.layer.cornerRadius = diameter/2;
             }
             
@@ -54,7 +55,6 @@
                 UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(viewDragged:)];
                 [view addGestureRecognizer:pan];
             }
-            
             
             if (tag < 9) {
                 [self.view addSubview:view];
@@ -100,6 +100,13 @@
             [self animateRoundToProgressIndicatorToView:tappedView];
             break;
         default:
+            if (self.view8IsSquare == YES) {
+                [self addJumpAndCornerRadiusToView:tappedView fromSquare:YES];
+                self.view8IsSquare = NO;
+            } else {
+                [self addJumpAndCornerRadiusToView:tappedView fromSquare:NO];
+                self.view8IsSquare = YES;
+            }
             break;
     }
 }
@@ -149,14 +156,14 @@
     POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewBackgroundColor];
     anim.duration = 1.0;
     anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    anim.toValue = (__bridge id)([UIColor flatEmeraldColor].CGColor);
+    anim.toValue = (__bridge id)([UIColor flatAlizarinColor].CGColor);
     
     [view pop_addAnimation:anim forKey:@"popColorBasic"];
 }
 
 - (void) addBckgColorSpringChangeAnimationToView:(UIView *)view {
     POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPViewBackgroundColor];
-    anim.toValue =  (__bridge id)([UIColor flatEmeraldColor].CGColor);
+    anim.toValue =  (__bridge id)([UIColor flatAlizarinColor].CGColor);
     anim.springBounciness = 20;
     
     [view pop_addAnimation:anim forKey:@"popColorSpring"];
@@ -248,6 +255,38 @@
     cornerRad.toValue = @(10);
     
     [view.layer pop_addAnimation:cornerRad forKey:@"cornerRadius"];
+}
+
+- (void) addJumpAndCornerRadiusToView:(UIView *)view fromSquare:(BOOL)square {
+    view.layer.anchorPoint = CGPointMake(0.5, 0.5);
+
+    if (square == YES) {
+        POPBasicAnimation *soften = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerCornerRadius];
+        soften.duration = 0.5;
+        soften.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        soften.toValue = @(25);
+        [view.layer pop_addAnimation:soften forKey:@"popLayerCornerRadius"];
+    } else {
+        POPBasicAnimation *harden = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerCornerRadius];
+        harden.duration = 0.5;
+        harden.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        harden.toValue = @(0);
+        [view.layer pop_addAnimation:harden forKey:@"popLayerCornerRadius"];
+    }
+    
+    POPBasicAnimation *scaleUp = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerSize];
+    scaleUp.duration = 0.5;
+    scaleUp.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    view.layer.anchorPoint = CGPointMake(0.5, 0.5);
+    scaleUp.toValue = [NSValue valueWithCGSize:CGSizeMake(view.frame.size.width * 1.5, view.frame.size.height * 1.5)];
+    [view.layer pop_addAnimation:scaleUp forKey:@"popScaleUp"];
+    
+    POPSpringAnimation *scaleD = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerSize];
+    scaleD.beginTime = CACurrentMediaTime()+0.5;
+    scaleD.toValue = [NSValue valueWithCGSize:CGSizeMake(view.frame.size.width, view.frame.size.height)];
+    scaleD.springSpeed = 4;
+    scaleD.springBounciness = 8;
+    [view.layer pop_addAnimation:scaleD forKey:@"popScaleD"];
 }
 
 
